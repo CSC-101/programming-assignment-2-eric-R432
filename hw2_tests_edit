@@ -1,13 +1,11 @@
-import data
-import hw2
-import unittest
-
-
-class TestCases(unittest.TestCase):
-    from data import Point, Rectangle, Duration, Song
+from data import Point, Rectangle, Duration, Song
 from hw2_edit.py import create_rectangle,shorter_duration_than, song_shorter_than, running_time,validate_route, longest_repetition
 import unittest
 
+
+# Write your test cases for each part below.
+
+class TestCases(unittest.TestCase):
 
     def test_create_rectangle(self):
         point1 = Point(2, 10)
@@ -116,6 +114,3 @@ import unittest
         result = longest_repetition(arr)
         self.assertEqual(expected, result)
 
-
-if __name__ == '__main__':
-    unittest.main()
